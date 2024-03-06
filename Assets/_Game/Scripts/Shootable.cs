@@ -5,11 +5,11 @@ using UnityEngine.Events;
 
 public class Shootable : MonoBehaviour
 {
-    public UnityEvent Shot;
+    public UnityEvent<int> Shot; //Unity event needs an int to work
 
-    public void Shoot()
+    public void GetShot(int damageAmount)
     {
-        Shot?.Invoke();
+        Debug.Log("Shot!");
+        Shot?.Invoke(damageAmount); //Passes damage amount from player to object triggering event
     }
-
 }

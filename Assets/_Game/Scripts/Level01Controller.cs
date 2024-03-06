@@ -12,6 +12,7 @@ public class Level01Controller : MonoBehaviour
 
     private void Awake()
     {
+
         // Lock mouse to camera
         Cursor.lockState = CursorLockMode.Locked;
         // Make mouse cursor not visible
