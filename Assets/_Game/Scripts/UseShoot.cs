@@ -57,6 +57,7 @@ public class UseShoot : MonoBehaviour
             if(shootableObject != null)
             {
                 //TODO: If statement that detects a weak point and passes in a new damageAmount
+                //This is the core mechanic so figure this out!!!!!!!!!
 
                 shootableObject.GetShot(_damageAmount); //Run GetShot method on target object
             }

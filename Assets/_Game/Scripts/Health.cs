@@ -44,6 +44,7 @@ public class Health : MonoBehaviour
     }
 
     //Object can take damage and eventually trigger Die()
+    //TODO: NEED TO MAKE IT SO EVENT SYSTEM CAN HAVE A PARAMETER FOR TAKEDAMAGE
     public void TakeDamage(int damageAmount)
     {
         AudioSource.PlayClipAtPoint(damageSound, transform.position, 1);
