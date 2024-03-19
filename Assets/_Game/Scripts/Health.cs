@@ -6,10 +6,10 @@ public class Health : MonoBehaviour
 {
     private Level01Controller level01Controller;
 
-    [SerializeField] private int _currentHealth = 3;
+    [SerializeField] public int _currentHealth = 3;
 
     [SerializeField] private Shootable _shootable;
-    private AudioSource audioSource;
+    //private AudioSource audioSource;
     public AudioClip damageSound;
 
     /*
@@ -40,7 +40,7 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         level01Controller = FindObjectOfType<Level01Controller>(); //Find Level01Controller in scene
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
     }
 
     //Object can take damage and eventually trigger Die()

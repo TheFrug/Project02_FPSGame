@@ -56,6 +56,8 @@ public class UseShoot : MonoBehaviour
                 hitInfo.transform.GetComponent<Shootable>();
             if(shootableObject != null)
             {
+                //TODO: If statement that detects a weak point and passes in a new damageAmount
+
                 shootableObject.GetShot(_damageAmount); //Run GetShot method on target object
             }
         }
